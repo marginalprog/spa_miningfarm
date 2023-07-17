@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiningFarm</title>
+    <link rel="stylesheet" href="C:\frontend\spa_mining\css\style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body onload="one()">
+    <header class="container header">
+        <div class="header_fixed">
+            <nav class="nav">
+                <div class="logo">
+                    <h2>MiningFarm</h2>
+                </div>
+                <div class="nav_menu" id="nav_menu">
+                    <button class="close_btn" id="close_btn">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                    <ul class="nav_menu_list">
+                        <li class="nav_menu_item">
+                            <div id="home" class ="menu_item nav_menu_link">
+                                <a href="#main_info">Домой</a>
+                            </div>
+                        </li>
+                        <li class="nav_menu_item"><br/><br/><br/>
+                            <div class ="menu_item nav_menu_link" onmouseover="show_Object2()"  onmouseout="hide_Object2()">Заказать</div>
+                            <div id = "div2" onmouseover="show_Object2()"  onmouseout="hide_Object2()" class ="hide">
+                                <div class ="padd"><a href="#click_form">Онлайн</a></div><br><br>
+                            </div>
+                        </li>
+                        <li class="nav_menu_item"><br/><br/><br/><br/><br/>
+                            <div class ="menu_item nav_menu_link" onmouseover="show_Object3()"  onmouseout="hide_Object3()">О нас</div>
+                            <div id = "div3" onmouseover="show_Object3()"  onmouseout="hide_Object3()" class ="hide">
+                                <div class ="padd"><a href="#main_text">Почему мы?</a></div><br>
+                                <div class ="padd"><a href="#click_hist">История</a></div>
+                            </div>
+                        </li>
+                        <li class="nav_menu_item"><br/><br/>
+                            <div class ="menu_item nav_menu_link" onmouseover="show_Object4()"  onmouseout="hide_Object4()">Где мы</div>
+                            <div id = "div4" onmouseover="show_Object4()"  onmouseout="hide_Object4()" class ="hide">
+                                <div id="link_map" class ="padd"><a href="#click_map">Карта</a></div><br/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="toggle_btn" id="toggle_btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <br><br><br>
+        <div id="main_info" class="container main_info">
+            <div class="grid-cols-2">
+                <div class="grid-item-1">
+                    <h1 class="main-heading">
+                        Добро пожаловать в <span>MiningFarm.</span><br/>
+                        Конвертируй электричество в деньги
+                    </h1>
+                    <p class="info-text">
+                        Выбери самые инновационные криптофермы и закажи их на нашем сайте.
+                    </p>
+  
+                <div class="btn_wrapper">
+                    <button class="btn view_more_btn">
+                        Узнай больше о майнинг фермах<i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button class="btn documentation_btn">Документация</button>
+                </div>
+                </div>
+                <div class="grid-item-2">
+                    <div class="main_img_wrapper">
+                        <img src="./img/main.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><div class ="hr_line"><hr></div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div id="main_diaf" class="container">
+            <div class="diaf">
+                <div id="diafilm">
+                    <p class="text_diaf">Наши криптофермы</p> <br>
+                    <div class = "lookcenter">
+                        <div id = "lbtn"> <img class="button" src="img/LeftButton.png" @click="leftBut" alt="Предыдущее фото"> </div>
+                        <img src="img/m1.jpg" id="fotoL" onClick="photoClick(1)" alt="Майнингферма">
+                        <img src="img/m2.jpg" id="fotoC" onClick="photoClick(2)" alt="Майнингферма">
+                        <img src="img/m3.jpg" id="fotoR" onClick="photoClick(3)" alt="Майнингферма">
+                        <div id = "rbtn"> <img class="button" src="img/RightButton.png" @click="rightBut" alt="Следующее фото"></div>
+                    </div>
+                    <div>
+                        <img src="img/m1.jpg" id="photoDiafilm" alt="Криптофермы">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <div id="main_text" class="container main_text">
+            <br><br><div class ="hr_line"><hr></div>
+            <div  class="grid-cols-3">
+                <div class="grid-col-item">
+                    <div class="icon">
+                        <img src="C:\frontend\landing\img\mining.png">
+                    </div>
+                    <div class="featured_info">
+                        <span>Что такое майнинг? </span>
+                        <p>
+                            Майнинг - это процесс добычи биткоина и других криптовалют, 
+                            в результате которого в блокчейн добавляется новый блок 
+                            транзакций и происходит эмиссия монет. Эмиссия, или выпуск 
+                            новых монет, является вознаграждением майнера за проделанную 
+                            работу и потраченную электроэнергию в процессе майнинга. 
+                            Добавление новой транзакции требует от сети затрат энергии 
+                            на решение определённой криптографической задачи.
+                        </p>
+                        <p>
+                            Наши станции способны обеспечить оптимальную производительность,
+                            поэтому нас выбирают.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-col-item">
+                    <div class="icon">
+                        <img src="C:\frontend\landing\img\certificated.png">
+                    </div>
+                    <div class="featured_info">
+                        <span>Протестированное оборудование</span>
+                        <p>
+                            Наше оборудование закупается напрямую у поставщиков и производителей,
+                            исключая посредников, что уменьшает вероятность того, что мы купим бракованный
+                            товар, так как посредники не занимаются его дополнительной транспортировкой
+                            или реализацией.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-col-item">
+                    <div class="icon">
+                        <img src="C:\frontend\landing\img\guaranteed.png">
+                        <div class="featured_info">
+                            <span>Многолетняя гарантия</span>
+                            <p>
+                                Компания <b> MiningFarm</b> ручается за каждую
+                                проданную криптоферму и выдает многолетние гарантии на их работу
+                                с бесплатным онлайн-обслуживанием.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div id="click_form" class="container">
+            <div class="cont_form">
+            <div class ="hr_line"><hr></div><br><br>
+            <div id="user_form" class="form_center">
+                <div class="user_form">
+                    <form action="#" method="post" name = "registration">
+                        <fieldset class = "field">
+                            <legend>Заказать звонок</legend>
+                            <div>
+                                <p><label for = "fname">Имя <em>* </em></label> <input type="text" name="fname" id="fname" placeholder="Введите имя" size="20" maxlength="20"></p>
+                                <p><label for = "fphone">Номер телефона <em>* </em> </label> <input type= "tel" name="mail" id="phone" placeholder="999-012-022" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    require size="20" maxlength="25"></p>
+                                <p><label for = "email">E-mail <em>* </em> </label> <input type= "email" name="mail" id="mail" placeholder="Введите почту" size="20" maxlength="25"></p>
+                            </div>
+                            <br><br>
+                            <div id="click_send" class="btn_wrapper">
+                                <button type="button" @click="greet" class="btn_send">Отправить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>  
+            </div>
+            <br><br><div id ="click_map" class ="hr_line"><hr></div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class = "cont_map">
+            <p class="text_diaf">Где мы находимся?</p> <br>
+            <div id="map" class="map"><img id="img_map" src="img/map.jpg" alt="Карта"><br></div>
+            <div id="map_text" class="map_text"><p>Мы находимся по адресу: <a>проспект В.В. Путина, 7, Грозный, Чеченская Республика</a></p></div>     
+            <div id ="click_hist" class ="hr_line"><hr></div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="container">
+            <div class="cont_hist">
+                <p class="text_diaf">История майнинга</p> <br>
+                <div id="history" class="history">
+                    <p>
+                        В 1983 году американский криптограф Дэвид Чаум придумал тип криптографических электронных денег под названием ecash.
+                        Позже, в 1995 году, он реализовал это через Digicash, раннюю форму криптографических электронных платежей.
+                        Digicash требовалось пользовательское программное обеспечение, чтобы снимать банкноты из банка и назначать
+                        определенные зашифрованные ключи, прежде чем их можно будет отправить получателю.
+                        Это позволило третьей стороне не отследить цифровую валюту.
+                    </p> <br>
+                    <p> 
+                        В 1996 году Агентство национальной безопасности опубликовало документ под названием «Как сделать монетный двор:
+                        криптография анонимных электронных денег», в котором описывалась система криптовалюты. Статья была впервые опубликована
+                        в списке рассылки Массачусетского технологического института, а затем, в 1997 году, в The American Law Review.
+                    </p><br>
+                <br><img id="hist_img" src="img/history.jpg"><br>
+                    <p> <br>
+                        В 1998 году Вей Дай описал «b-money», анонимную распределенную систему электронных денег. Вскоре после этого Ник Сабо описал
+                        «bit-gold». Подобно биткойну и другим криптовалютам, которые последуют за ним, бит-золото (не путать с более поздней биржей
+                        на основе золота BitGold) описывалось как система электронной валюты, требовала от пользователей доказательства выполнения
+                        работы, которые были криптографически собраны вместе и опубликованы.
+                    </p><br>
+                    <p>
+                        В январе 2009 года разработчиком под псевдонимом Сатоши Накамото был создан биткойн. Он использовал SHA-256, криптографическую
+                        хеш-функцию, в своей схеме проверки работоспособности. В апреле 2011 года был создан Namecoin как попытка сформировать
+                        децентрализованную DNS. В октябре 2011 года был выпущен Litecoin, который использовал scrypt в качестве хеш-функции
+                        вместо SHA-256. Peercoin, созданный в августе 2012 года, использовал гибрид Proof-of-Work и Proof-of-Stake.
+                    </p> <br> <br>
+                </div>
+            </div>
+            <div class ="hr_line"><hr></div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://www.kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
